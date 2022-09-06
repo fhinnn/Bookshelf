@@ -17,8 +17,9 @@
 
     <main>
       <section class="input_section">
-        <h1 style="text-align: center">Insert New Book</h1>
+        <h2 style="text-align: center">Insert New Book</h2>
         <div class="form_input">
+          <img class="images_book" src="images/background-book-bookcase-books.jpg" alt="bookshelf" />
           <div class="input">
             <label for="inputBookTitle">Title</label>
             <input id="inputBookTitle" type="text" required />
@@ -35,16 +36,16 @@
             <label for="inputBookIsComplete"> Compeleted </label>
             <input id="inputBookIsComplete" type="checkbox" />
           </div>
+          <button id="bookSubmit" type="submit">Insert !</button>
         </div>
-        <button id="bookSubmit" type="submit">Insert !</button>
       </section>
 
       <section class="search_section">
-        <h1 style="text-align: center">Search Book Title</h1>
+        <h2 style="text-align: center">Search Book</h2>
         <form id="searchBook">
-          <label for="searchBookTitle">Judul</label>
-          <input id="searchBookTitle" type="text" />
-          <button id="searchSubmit" type="submit">Cari</button>
+          <label for="searchBookTitle">Book Title</label>
+          <input id="searchBookTitle" type="text" placeholder="Search Book..." />
+          <button id="searchSubmit" type="submit">Search</button>
         </form>
       </section>
     </main>
@@ -59,7 +60,7 @@
       </section>
     </div>
     <footer>
-      <p style="text-align: center">Made By Dhafin Almas <img id="aneh" src="heart.png" alt="heart" /> for Dicoding Submissions.</p>
+      <p style="text-align: center">Made By Dhafin Almas <img id="aneh" src="images/heart.png" alt="heart" /> for Dicoding Submissions.</p>
     </footer>
     <script src="main.js"></script>
   </body>

@@ -1,70 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Spectral:wght@300&display=swap');
 
-.head_bar__title {
-  font-family: 'Grand Hotel', cursive;
-  margin: 0px;
-  color: white;
-  font-size: 40px;
-  padding-left: 5%;
+h2 {
+  font-family: 'Spectral', serif;
+  font-size: 23px;
+  text-decoration: underline;
 }
-
-header {
-  margin: 0px;
-  padding: 0px;
-}
-.input_section {
+button {
+  background-color: blanchedalmond;
   border-radius: 10px;
-  background-color: black;
-  padding: 5%;
-}
-.form_input {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  padding: 1%;
 }
 body {
-  background-color: #151515;
-  color: white;
-  margin: 0%;
-  padding: 0%;
+  background-color: #f5eddc;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: 'Bebas Neue', cursive;
 }
-.input {
+header {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 25px;
+}
+main {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
-.search_section {
+.images_book {
+  float: left;
+  width: 50%;
+  padding-right: 5%;
+}
+
+.input_section {
+  float: right;
+  background-color: #d7c0ae;
   border-radius: 10px;
-  background-color: black;
+  padding: 5%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.search_section {
+  background-color: #d7c0ae;
+  border-radius: 10px;
   padding: 5%;
 }
 #searchBook {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 5px;
 }
+
 .book_info {
   display: flex;
-  padding: 2%;
-  gap: 50px;
+  gap: 10px;
   justify-content: center;
+  padding: 5%;
 }
-
 .book_shelf {
+  background-color: #d7c0ae;
   border-radius: 10px;
-  background-color: black;
   padding: 5%;
 }
-
-main {
-  display: flex;
-  padding: 5%;
-  gap: 50px;
-  justify-content: center;
-}
-
 footer {
-  overflow: hidden;
-  font-size: large;
-  font-weight: 400;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
 }
 
 #aneh {
