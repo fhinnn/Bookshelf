@@ -30,12 +30,16 @@ body {
 }
 .input {
   display: flex;
-  gap: 25px;
+  gap: 10px;
 }
 .search_section {
   border-radius: 10px;
   background-color: black;
   padding: 5%;
+}
+#searchBook {
+  display: flex;
+  gap: 10px;
 }
 .book_info {
   display: flex;
@@ -55,4 +59,15 @@ main {
   padding: 5%;
   gap: 50px;
   justify-content: center;
+}
+
+footer {
+  overflow: hidden;
+  font-size: large;
+  font-weight: 400;
+}
+
+#aneh {
+  width: 1vw;
+  height: fit-content;
 }
