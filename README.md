@@ -1,3 +1,4 @@
-Submission kelas "Belajar Dasar Pemrograman Web" di Dicoding Indonesia.
+Submission kelas "Belajar Membuat Front-End Web untuk Pemula
+" di Dicoding Indonesia.
 
 
