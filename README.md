@@ -1,2 +1,4 @@
-## bookshelf-apps
-# Final Project Front End Pemula Dicoding
+Submission kelas "Belajar Membuat Front-End Web untuk Pemula
+" di Dicoding Indonesia.
+
+
