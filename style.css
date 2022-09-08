@@ -3,20 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Spectral:wght@300&display=swap');
 
 h2 {
-  font-family: 'Spectral', serif;
-  font-size: 23px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
   text-decoration: underline;
 }
 button {
   background-color: blanchedalmond;
   border-radius: 10px;
-  padding: 1%;
+  font-family: 'Spectral', serif;
+  font-size: 20px;
+  cursor: pointer;
 }
 body {
   background-color: #f5eddc;
-  margin-left: 25%;
-  margin-right: 25%;
-  font-family: 'Bebas Neue', cursive;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Spectral', serif;
+  font-size: 20px;
 }
 header {
   font-family: 'Grand Hotel', cursive;
@@ -25,16 +28,23 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+}
+input {
+  border-radius: 10px;
+  padding: 2% 5% 2% 5%;
+  font-size: medium;
 }
 .images_book {
-  float: left;
   width: 50%;
-  padding-right: 5%;
+  height: auto;
 }
 
+.form_input {
+  display: flex;
+  gap: 5%;
+}
 .input_section {
-  float: right;
   background-color: #d7c0ae;
   border-radius: 10px;
   padding: 5%;
@@ -60,12 +70,37 @@ main {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding: 5%;
+  text-align: center;
 }
 .book_shelf {
   background-color: #d7c0ae;
   border-radius: 10px;
   padding: 5%;
+  flex-basis: 50%;
+}
+.inner {
+  border-radius: 15px;
+  background-color: #967e76;
+  padding: 2% 5% 2% 5%;
+}
+.inner > h3 {
+  margin: 0;
+  padding: 0%;
+}
+.inner > p {
+  margin: 0;
+  line-height: 1;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.button-grup {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  padding: 2% 5% 2% 5%;
 }
 footer {
   font-family: 'Spectral', serif;

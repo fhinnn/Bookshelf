@@ -18,26 +18,28 @@
     <main>
       <section class="input_section">
         <h2 style="text-align: center">Insert New Book</h2>
-        <div class="form_input">
+        <form class="form_input" id="inputs">
           <img class="images_book" src="images/background-book-bookcase-books.jpg" alt="bookshelf" />
-          <div class="input">
-            <label for="inputBookTitle">Title</label>
-            <input id="inputBookTitle" type="text" required />
+          <div class="form_section">
+            <div class="input">
+              <label for="inputBookTitle">Title</label>
+              <input id="inputBookTitle" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Author</label>
+              <input id="inputBookAuthor" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Year</label>
+              <input id="inputBookYear" type="number" maxlength="4" required />
+            </div>
+            <div class="input_inline">
+              <label for="inputBookIsComplete"> Compeleted </label>
+              <input id="inputBookIsComplete" type="checkbox" />
+            </div>
+            <button type="submit" name="Submit" id="bookSubmit">Insert !</button>
           </div>
-          <div class="input">
-            <label for="inputBookAuthor">Author</label>
-            <input id="inputBookAuthor" type="text" required />
-          </div>
-          <div class="input">
-            <label for="inputBookYear">Year</label>
-            <input id="inputBookYear" type="number" required />
-          </div>
-          <div class="input_inline">
-            <label for="inputBookIsComplete"> Compeleted </label>
-            <input id="inputBookIsComplete" type="checkbox" />
-          </div>
-          <button id="bookSubmit" type="submit">Insert !</button>
-        </div>
+        </form>
       </section>
 
       <section class="search_section">
@@ -48,20 +50,23 @@
           <button id="searchSubmit" type="submit">Search</button>
         </form>
       </section>
+
+      <div class="book_info">
+        <section class="book_shelf">
+          <h2>Uncompeleted</h2>
+          <div class="list-item" id="books_uncompleted"></div>
+        </section>
+
+        <section class="book_shelf">
+          <h2>Compeleted</h2>
+          <div class="list-item" id="books_completed"></div>
+        </section>
+      </div>
     </main>
 
-    <div class="book_info">
-      <section class="book_shelf">
-        <h2>Uncompeleted Reading</h2>
-      </section>
-
-      <section class="book_shelf">
-        <h2>Compeleted Reading</h2>
-      </section>
-    </div>
     <footer>
       <p style="text-align: center">Made By Dhafin Almas <img id="aneh" src="images/heart.png" alt="heart" /> for Dicoding Submissions.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
