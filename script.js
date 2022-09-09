@@ -1,8 +1,7 @@
 const books = [];
 const RENDER_EVENT = 'render-book';
-const searchResult = [];
+const SAVED_EVENT = 'saved-book';
 const STORAGE_KEY = 'Bookshelf_APPS';
-const RENDER_SEARCH_EVENT = 'render-search-result';
 
 function isStorageExist() {
   if (typeof Storage === undefined) {
@@ -40,16 +39,27 @@ document.addEventListener('DOMContentLoaded', function () {
     addBook();
   });
   const searchForm = document.getElementById('searchBookTitle');
-  searchForm.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      searchItem(searchForm.value);
-      e.preventDefault();
-    }
-  });
+  searchForm.addEventListener('keyup', carilist);
+
   if (isStorageExist()) {
     loadDataFromStorage();
   }
 });
+
+function carilist(e) {
+  const pencarianList = e.target.value.toLowerCase();
+  let itemList = document.querySelectorAll('.inner');
+
+  itemList.forEach((item) => {
+    const isiitem = item.firstChild.textContent.toLowerCase();
+
+    if (isiitem.indexOf(pencarianList) != -1) {
+      item.setAttribute('style', 'display: block;');
+    } else {
+      item.setAttribute('style', 'display: none !important;');
+    }
+  });
+}
 
 function addBook() {
   const bookTitle = document.getElementById('inputBookTitle').value;
