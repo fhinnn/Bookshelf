@@ -190,13 +190,23 @@ function addTaskToCompleted(bookId) {
   saveData();
 }
 function removeTaskFromCompleted(bookId) {
-  const bookTarget = findBookIndex(bookId);
+  const popupConfirmation = document.querySelector('.popup-confirmation');
+  popupConfirmation.classList.add('active');
+  const optionYes = document.querySelector('.confirm-yes');
+  const optionNo = document.querySelector('.confirm-no');
+  optionNo.addEventListener('click', function () {
+    popupConfirmation.classList.remove('active');
+    return;
+  });
+  optionYes.addEventListener('click', function () {
+    const bookTarget = findBookIndex(bookId);
+    popupConfirmation.classList.remove('active');
+    if (bookTarget === -1) return;
 
-  if (bookTarget === -1) return;
-
-  books.splice(bookTarget, 1);
-  document.dispatchEvent(new Event(RENDER_EVENT));
-  saveData();
+    books.splice(bookTarget, 1);
+    document.dispatchEvent(new Event(RENDER_EVENT));
+    saveData();
+  });
 }
 function findBookIndex(bookId) {
   for (const index in books) {

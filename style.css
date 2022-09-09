@@ -102,6 +102,35 @@ input {
   justify-content: center;
   padding: 2% 5% 2% 5%;
 }
+
+.popup-confirmation {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.popup-confirmation > .form {
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.popup-confirmation button {
+  margin: 5px 4px;
+  width: 90px;
+}
+.active {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: ease-in 0.1s;
+}
 footer {
   font-family: 'Spectral', serif;
   font-weight: 600;
